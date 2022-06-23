@@ -11,10 +11,7 @@ on:
 
 jobs:
   example_job:
-    name: Pass input and secrets to my-action
+    name: Reusable Echo
     runs-on: ubuntu-latest
     steps:
-      - uses: ./.github/workflows/jmeter-runner.yaml
-        with:
-          username: ${{ inputs.username }}
-          token: ${{ secrets.token }}
+      - run: echo this is a statement
