@@ -2,7 +2,7 @@ name: jmeter-runner
 on: 
   push:
     branches: 
-    - 'extra branch'
+    - 'extra-branch'
 jobs:
   tester-job:
     runs-on: ubuntu-latest
