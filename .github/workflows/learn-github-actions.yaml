@@ -13,7 +13,7 @@ jobs:
   example-job:
       runs-on: ubuntu-latest
       steps:
-        - name: Connect to PostgreSQL
+        #- name: Connect to PostgreSQL
         - uses: actions/setup-node@v3
         - run: node client.js
           env:
