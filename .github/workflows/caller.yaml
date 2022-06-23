@@ -1,8 +1,6 @@
 name: Call a reusable workflow
 on: push
 jobs:
-  call-workflow:
-    uses: octo-org/example-repo/.github/workflows/workflow-A.yml@v1
   call-workflow-passing-data:
     uses: Matt-J-Dong/GitHub-Actions-Tester/.github/workflows/reusable.yaml@main
     with:
