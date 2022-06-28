@@ -1,4 +1,4 @@
-name: learn-github-actions
+name: Learning GitHub Actions
 on: 
   push
 jobs:
