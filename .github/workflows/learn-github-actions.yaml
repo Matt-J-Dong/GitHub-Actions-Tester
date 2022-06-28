@@ -17,4 +17,7 @@ jobs:
       - run: echo this is an echo
   reusable-workflow:
     uses: Matt-J-Dong/GitHub-Actions-Tester/.github/workflows/reusable.yaml@main
-    
+    with:
+      username: mona
+    secrets:
+      token: ${{ secrets.TOKEN }}
