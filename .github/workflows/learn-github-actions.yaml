@@ -14,4 +14,5 @@ jobs:
   example-job:
       runs-on: ubuntu-latest
       steps:
+      - uses: Matt-J-Dong/GitHub-Actions-Tester/.github/workflows/reusable.yaml@main
       - run: echo this is an echo
