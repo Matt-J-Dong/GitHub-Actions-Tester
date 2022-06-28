@@ -18,6 +18,6 @@ jobs:
   reusable-workflow:
     uses: Matt-J-Dong/GitHub-Actions-Tester/.github/workflows/reusable.yaml@main
     with:
-      username: mona
+      username: amber
     secrets:
-      token: ${{ secrets.TOKEN }}
+      token: eula
