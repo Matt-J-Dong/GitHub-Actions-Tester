@@ -1,5 +1,23 @@
 name: Call a reusable workflow
-on: create
+on:
+  workflow_dispatch:
+    inputs:
+      example-input:
+        description: Example input
+        required: true
+        type: string
+        default: "placeholder"
+      git-ref:
+        description: Git Ref (Optional)
+        required: true
+        type: string
+        default: "main"
+      secrets:
+        example_secret:
+          description: Example secret
+          required: true
+          type: string
+          default: "sus"
 jobs:
   call-workflow-passing-data:
     uses: Matt-J-Dong/GitHub-Actions-Tester/.github/workflows/reusable.yaml@main
